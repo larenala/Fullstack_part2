@@ -112,5 +112,25 @@ describe('the favorite blog', () => {
         expect(result).toEqual(blog)
     })
 
+  describe('find the writer who has', () => {
+    test('the most blogs',  () => {
+      const expectedResult = {
+        author: 'Robert C. Martin',
+        blogs: 3
+      }
+      const result = listHelper.mostBlogs(blogs)
+      expect(result).toEqual(expectedResult)
+    })
+    test.only('most likes all blogs combined', () => {
+      const expectedResult = {
+        author: "Edsger W. Dijkstra",
+        likes: 17
+      }
+      const result = listHelper.mostLikes(blogs)
+      expect(result).toEqual(expectedResult)
+    })
+  })
+
+
 })
 
