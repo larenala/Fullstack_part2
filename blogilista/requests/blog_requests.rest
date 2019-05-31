@@ -1,13 +1,15 @@
 
+DELETE http://localhost:3001/api/blogs HTTP/1.1
 
+###
 
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI1Y2VmODlmM2I0ZWUzYjJmMTZkYjdkYzIiLCJpYXQiOjE1NTkyMTA3MTZ9.2_8O5RjBJs63I8mt3U5pJ_MS-XazTOjpYx5gAQ7HlTg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFydG8iLCJpZCI6IjVjZWY4YTE1YjRlZTNiMmYxNmRiN2RjMyIsImlhdCI6MTU1OTI5MjExMn0.FZIoeLI3Xt5Znmnhabmarms6Bh8PblBVTOU-0iVsiy8
 
 {
-    "title": "Type wars",
+    "title": "Arto wars",
     "author": "Robert C. Martin",
     "url": "http://blog.cleancoder.com/uncle-bob/2016/05/01/TypeWars.html",
-    "likes": 2
+    "§": 2
 }
